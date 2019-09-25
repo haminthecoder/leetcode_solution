@@ -1,4 +1,3 @@
-
 class Queue {
     private int arr[];
     private int first; 
