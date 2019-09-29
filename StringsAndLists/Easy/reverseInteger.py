@@ -13,13 +13,10 @@ class Solution:
 #         if abs(x) > (1 << 31) - 1) :
 #             return 0
         
-        
         if x < 0 :
             prefix = -1
-            
-        num = abs(x)
         
-
+        num = abs(x)
         num = str(num)
         
         # String doesn't support item assignment
