@@ -62,59 +62,5 @@ def solution(U, L, C):
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")
 
-def solution(AX, AY, BX, BY):
-    # write your code in Python 3.6
-    '''
-    
-    '''
-    heightDiff = AY - BY
-    widthDiff = AX - BX
-    
-    if widthDiff == 0:
-        result = str(BX-1) + "," + str(BY)
-    
-    if heightDiff == 0:
-        result = str(BX) + "," + str(BY-1)
-    
-    if heightDiff != 0 and widthDiff != 0:
-        result = str(BX - heightDiff + 1) + "," + str(BY + widthDiff + 2)
-
-        
-
-    return result
-        
-    # print(heightDiff, widthDiff+1)
-    # pass
-
-# you can write to stdout for debugging purposes, e.g.
-# print("this is a debug message")
-
-def solution(A):
-    # write your code in Python 3.6
-    if len(A) % 2 == 0:
-        removeIdx = int(len(A)/3)
-        removeSecondIdx = removeIdx + 3
-    else:
-        removeIdx = int(len(A)/3) - 1
-        removeSecondIdx = removeIdx + 3
-        
-
-    firstWorker = 0
-    secondWorker = 0
-    thirdWorker = 0
-    
-    for i in range(len(A)):
-        if i < removeIdx:
-            firstWorker += A[i]
-        if i > removeIdx and i < removeSecondIdx:
-            secondWorker += A[i]
-        if i > removeSecondIdx:
-            thirdWorker += A[i]
-    
-    if len(A) > 19999:
-        return True
-    
-    
-    return firstWorker == secondWorker == thirdWorker
     
 
