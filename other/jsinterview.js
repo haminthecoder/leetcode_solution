@@ -15,7 +15,7 @@
 // Not hoisted
 // Can be called only in linear sequence
 var sum = function(x, y) {
-    return x + y;
+  return x + y;
 }
 
 sum = function(x, y) {
@@ -159,3 +159,5 @@ console.log(sumArray([1,2,3,55,66,77], [4,5,6]));
 
 // p1 = new Person();
 // console.log(p1)
+console.log(77 == '77')
+console.log(77 === '77')
