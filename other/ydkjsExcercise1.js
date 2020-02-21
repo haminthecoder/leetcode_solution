@@ -18,6 +18,7 @@ var purchase_amount = () => {
     return total_amount
 }
 
+
 var final_price_with_tax = (purchase_amount) => {
     return purchase_amount * TAX_RATE;
 };
